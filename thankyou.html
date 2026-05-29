@@ -1,0 +1,1391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Traffic Lens Tracker -->
+  <script type="text/javascript">
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://traffic-lens-puce.vercel.app/e/00000000-0000-0000-0000-000000000001';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!-- End Traffic Lens Tracker -->
+
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRX7RPRR');</script>
+  <!-- End Google Tag Manager -->
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Final step — call to verify your SuperTV device activation.">
+  <title>SuperTV — Verify Your Activation</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #ffffff;
+      --bg-page: #eaeded;
+      --header: #131921;
+      --header-2: #232f3e;
+      --ink: #0f1111;
+      --ink-2: #565959;
+      --ink-3: #707778;
+      --link: #007185;
+      --link-hover: #c7511f;
+      --line: #d5d9d9;
+      --line-soft: #e7e7e7;
+      --soft-bg: #f7f8f8;
+      --yellow-bg: #ffd814;
+      --yellow-hover: #f7ca00;
+      --yellow-border: #fcd200;
+      --yellow-active: #f0b800;
+      --orange-bg: #ffa41c;
+      --orange-hover: #fa8900;
+      --orange-border: #ff8f00;
+      --search-peach: #febd69;
+      --success: #007600;
+      --success-bg: #ecf6ec;
+      --warning: #c45500;
+      --warning-bg: #fffaf3;
+      --star: #de7921;
+      --focus: #007185;
+    }
+
+    body {
+      font-family: 'Amazon Ember', 'Helvetica Neue', Roboto, Arial, sans-serif;
+      background: var(--bg-page);
+      color: var(--ink);
+      line-height: 1.5;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: inherit;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 18px;
+    }
+
+    ::selection {
+      background: var(--yellow-bg);
+      color: var(--ink);
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      padding: 12px;
+      background: var(--header);
+      color: #fff;
+      font-weight: 700;
+      z-index: 200;
+    }
+
+    .skip-link:focus {
+      left: 12px;
+      top: 12px;
+    }
+
+    /* HEADER */
+    .header {
+      background: var(--header);
+      color: #fff;
+      padding: 8px 0;
+    }
+
+    .header .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+      padding: 8px 10px;
+      border-radius: 3px;
+      border: 1px solid transparent;
+      transition: border-color .15s ease;
+    }
+
+    .brand:hover {
+      border-color: #fff;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .brand-mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: var(--search-peach);
+      position: relative;
+    }
+
+    .brand-mark::after {
+      content: '';
+      position: absolute;
+      inset: 7px;
+      background: var(--header);
+      border-radius: 2px;
+    }
+
+    .brand .dot {
+      color: var(--search-peach);
+    }
+
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      color: #fff;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      font-size: 14px;
+      transition: border-color .15s ease;
+    }
+
+    .header-cta:hover {
+      border-color: #fff;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .header-cta .ico {
+      width: 16px;
+      height: 16px;
+    }
+
+    .header-cta .top {
+      font-size: 12px;
+      color: #cccccc;
+      line-height: 1.2;
+      display: block;
+    }
+
+    .header-cta .bottom {
+      font-weight: 700;
+      font-size: 14px;
+      display: block;
+    }
+
+    /* SUPPORT STRIP */
+    .support-strip {
+      background: #232f3e;
+      color: #fff;
+      padding: 8px 0;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .support-strip .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .support-strip .green-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #67c97c;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    .support-strip a.tel {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: var(--search-peach);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    .support-strip a.tel:hover {
+      color: var(--search-peach);
+    }
+
+    /* MAIN */
+    main {
+      background: var(--bg-page);
+      padding: 18px 0 40px;
+    }
+
+    .crumb {
+      font-size: 13px;
+      color: var(--ink-2);
+      margin-bottom: 14px;
+    }
+
+    .crumb a {
+      color: var(--link);
+    }
+
+    .crumb .sep {
+      color: var(--ink-3);
+      margin: 0 6px;
+    }
+
+    /* SUCCESS BANNER */
+    .success-banner {
+      background: var(--success-bg);
+      border: 1px solid #cfe7cf;
+      border-left: 4px solid var(--success);
+      border-radius: 8px;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .success-banner .check-ico {
+      width: 40px;
+      height: 40px;
+      background: var(--success);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      flex: 0 0 40px;
+    }
+
+    .success-banner .check-ico svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .success-banner .text strong {
+      display: block;
+      color: var(--success);
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .success-banner .text span {
+      font-size: 14px;
+      color: var(--ink-2);
+    }
+
+    /* HERO LAYOUT */
+    .hero {
+      background: #fff;
+      border: 1px solid var(--line-soft);
+      border-radius: 8px;
+      padding: 28px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.85fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    /* LEFT — order summary */
+    .order-summary h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .order-summary .sub {
+      color: var(--ink-2);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .ref-card {
+      background: var(--soft-bg);
+      border: 1px solid var(--line-soft);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .ref-card .item .key {
+      font-size: 12px;
+      color: var(--ink-2);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 3px;
+    }
+
+    .ref-card .item .val {
+      font-size: 15px;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .ref-card .item .pill {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 2px 8px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      letter-spacing: 3px;
+      font-size: 14px;
+    }
+
+    .ref-card .item .verified-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--warning);
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    /* TIMELINE */
+    .timeline {
+      background: #fff;
+      border: 1px solid var(--line-soft);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .timeline h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .timeline-step {
+      display: grid;
+      grid-template-columns: 32px 1fr auto;
+      gap: 14px;
+      align-items: start;
+      padding: 12px 0;
+      position: relative;
+    }
+
+    .timeline-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 38px;
+      bottom: -10px;
+      width: 2px;
+      background: var(--line);
+    }
+
+    .timeline-step.done::after {
+      background: var(--success);
+    }
+
+    .timeline-step .dot {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--soft-bg);
+      border: 2px solid var(--line);
+      display: grid;
+      place-items: center;
+      color: var(--ink-3);
+      font-weight: 700;
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .timeline-step.done .dot {
+      background: var(--success);
+      border-color: var(--success);
+      color: #fff;
+    }
+
+    .timeline-step.active .dot {
+      background: var(--yellow-bg);
+      border-color: var(--yellow-border);
+      color: var(--ink);
+    }
+
+    .timeline-step .dot svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .timeline-step .info strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+
+    .timeline-step .info p {
+      font-size: 13px;
+      color: var(--ink-2);
+    }
+
+    .timeline-step .status {
+      font-size: 13px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+
+    .timeline-step .status.done {
+      background: var(--success-bg);
+      color: var(--success);
+      border: 1px solid #cfe7cf;
+    }
+
+    .timeline-step .status.pending {
+      background: var(--warning-bg);
+      color: var(--warning);
+      border: 1px solid #f5d586;
+    }
+
+    .timeline-step .status.upcoming {
+      background: var(--soft-bg);
+      color: var(--ink-2);
+      border: 1px solid var(--line);
+    }
+
+    /* RIGHT — VERIFY BOX (the buy-box of this page) */
+    .verify-box {
+      border: 2px solid var(--orange-border);
+      border-radius: 8px;
+      padding: 0;
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(213, 217, 217, 0.5);
+    }
+
+    .verify-box .top-strip {
+      background: var(--warning-bg);
+      border-bottom: 1px solid #f5d586;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--warning);
+    }
+
+    .verify-box .top-strip svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .verify-box .body {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .verify-box .label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--warning);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 6px;
+    }
+
+    .verify-box h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .verify-box .sub {
+      color: var(--ink-2);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .verify-box .phone-circle {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: var(--yellow-bg);
+      border: 1px solid var(--yellow-border);
+      display: grid;
+      place-items: center;
+      color: var(--ink);
+      box-shadow: 0 4px 12px rgba(255, 216, 20, 0.4);
+    }
+
+    .verify-box .phone-circle svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    .verify-box .number {
+      display: block;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      line-height: 1.1;
+      margin-bottom: 4px;
+      letter-spacing: -0.01em;
+    }
+
+    .verify-box .number:hover {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+    .verify-box .toll-free {
+      font-size: 12px;
+      color: var(--ink-2);
+      margin-bottom: 16px;
+    }
+
+    .btn-orange {
+      width: 100%;
+      padding: 12px 14px;
+      background: var(--orange-bg);
+      border: 1px solid var(--orange-border);
+      border-radius: 100px;
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      font-family: inherit;
+      transition: background .1s ease, box-shadow .1s ease;
+    }
+
+    .btn-orange:hover {
+      background: var(--orange-hover);
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .btn-orange:active {
+      box-shadow: 0 1px 2px 0 rgba(213, 217, 217, 0.5);
+    }
+
+    .btn-orange .ico {
+      width: 18px;
+      height: 18px;
+    }
+
+    .btn-yellow {
+      width: 100%;
+      padding: 10px 14px;
+      margin-top: 10px;
+      background: var(--yellow-bg);
+      border: 1px solid var(--yellow-border);
+      border-radius: 100px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+      box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+      min-height: 44px;
+      font-family: inherit;
+      transition: background .1s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .btn-yellow:hover {
+      background: var(--yellow-hover);
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .verify-box .meta {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line-soft);
+      font-size: 12px;
+      color: var(--ink-2);
+      line-height: 1.6;
+    }
+
+    .verify-box .meta .row {
+      display: flex;
+      justify-content: space-between;
+      margin: 3px 0;
+    }
+
+    .verify-box .meta .val {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .verify-box .meta .val.green {
+      color: var(--success);
+    }
+
+    .verify-box .secure-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--ink-2);
+    }
+
+    .verify-box .secure-tag svg {
+      width: 14px;
+      height: 14px;
+      color: var(--success);
+    }
+
+    /* CARDS */
+    .card {
+      background: #fff;
+      border: 1px solid var(--line-soft);
+      border-radius: 8px;
+      padding: 24px;
+      margin-top: 18px;
+    }
+
+    .card h2 {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .card p {
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .why-item {
+      padding: 16px;
+      background: var(--soft-bg);
+      border: 1px solid var(--line-soft);
+      border-radius: 8px;
+    }
+
+    .why-item .ico-wrap {
+      width: 36px;
+      height: 36px;
+      background: #fff;
+      border: 1px solid var(--line-soft);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--warning);
+      margin-bottom: 10px;
+    }
+
+    .why-item .ico-wrap svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .why-item h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .why-item p {
+      font-size: 13px;
+      color: var(--ink-2);
+      line-height: 1.55;
+    }
+
+    /* DEVICES READY */
+    .ready-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .ready-grid img.mvp {
+      width: 100%;
+      height: auto;
+    }
+
+    .ready-grid .text h2 {
+      border: 0;
+      padding: 0;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .ready-grid .text p {
+      margin-bottom: 14px;
+    }
+
+    .ready-grid ul {
+      list-style: none;
+    }
+
+    .ready-grid li {
+      padding: 6px 0 6px 24px;
+      position: relative;
+      font-size: 14px;
+      color: var(--ink);
+    }
+
+    .ready-grid li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 4px;
+      color: var(--success);
+      font-weight: 700;
+    }
+
+    /* SUPPORT CTA */
+    .support-cta {
+      margin-top: 18px;
+      background: #fff8ec;
+      border: 1px solid var(--yellow-border);
+      border-radius: 8px;
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .support-cta .left h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .support-cta .left p {
+      font-size: 15px;
+      color: var(--ink-2);
+      max-width: 380px;
+    }
+
+    .support-cta .left strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .support-cta .right {
+      text-align: center;
+    }
+
+    .support-cta .right .phone-circle {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 12px;
+      border-radius: 50%;
+      background: var(--yellow-bg);
+      border: 1px solid var(--yellow-border);
+      display: grid;
+      place-items: center;
+      color: var(--ink);
+    }
+
+    .support-cta .right .phone-circle svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    .support-cta .right .number {
+      display: block;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      margin-bottom: 4px;
+    }
+
+    .support-cta .right .number:hover {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+    .support-cta .right .helper {
+      font-size: 13px;
+      color: var(--ink-2);
+      margin-bottom: 14px;
+    }
+
+    .support-cta .right .btn-orange {
+      width: auto;
+      padding: 11px 26px;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+    .back-to-top {
+      background: var(--header-2);
+      color: #fff;
+      padding: 14px 0;
+      text-align: center;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .back-to-top:hover {
+      background: #2d3b4f;
+    }
+
+    footer.site {
+      background: var(--header);
+      color: #ddd;
+      padding: 36px 0 22px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .footer-bottom a.tel {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: var(--search-peach);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ready-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .support-cta {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .support-cta .left p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    /* MOBILE LEAN FUNNEL */
+    @media (max-width: 700px) {
+
+      .header,
+      .card,
+      .back-to-top,
+      .ref-card {
+        display: none !important;
+      }
+
+      .container {
+        padding: 0 12px;
+      }
+
+      main {
+        padding: 14px 0 24px;
+      }
+
+      .crumb {
+        display: none;
+      }
+
+      .success-banner {
+        padding: 14px 16px;
+        gap: 12px;
+      }
+
+      .success-banner .text strong {
+        font-size: 16px;
+      }
+
+      .success-banner .text span {
+        font-size: 13px;
+      }
+
+      .hero {
+        background: transparent;
+        border: 0;
+        padding: 0;
+      }
+
+      .order-summary {
+        display: none;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .verify-box .body {
+        padding: 22px 18px;
+      }
+
+      .verify-box h2 {
+        font-size: 20px;
+      }
+
+      .verify-box .number {
+        font-size: 28px;
+      }
+
+      .verify-box .phone-circle {
+        width: 64px;
+        height: 64px;
+      }
+
+      .verify-box .phone-circle svg {
+        width: 28px;
+        height: 28px;
+      }
+
+      .support-cta {
+        margin-top: 14px;
+        padding: 22px 18px;
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .support-cta .left h2 {
+        font-size: 20px;
+      }
+
+      .support-cta .left p {
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .support-cta .right .number {
+        font-size: 26px;
+      }
+
+      footer.site {
+        padding: 18px 0;
+      }
+
+      .footer-bottom {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: 0;
+      }
+
+      .footer-bottom a.tel {
+        font-size: 16px;
+      }
+
+      .support-strip {
+        font-size: 14px;
+        padding: 10px 0;
+      }
+
+      .support-strip .row {
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRX7RPRR" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <a href="/" class="brand" aria-label="SuperTV home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>SuperTV<span class="dot">.</span></span>
+        </a>
+        <a href="tel:+18556184329" class="header-cta" aria-label="Call customer service at +1 (855) 618-4329">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" />
+          </svg>
+          <span>
+            <span class="top">Customer Service</span>
+            <span class="bottom">+1 (855) 618-4329</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUB HEADER -->
+  <!-- SUPPORT STRIP -->
+  <div class="support-strip">
+    <div class="container">
+      <div class="row">
+        <span><span class="green-dot" aria-hidden="true"></span>Verification specialists available — average wait under
+          2 minutes</span>
+        <a href="tel:+18556184329" class="tel" aria-label="Call customer service at +1 (855) 618-4329">Call +1 (855) 618-4329</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+
+      <nav class="crumb" aria-label="Breadcrumb">
+        <a href="#">Help &amp; Customer Service</a>
+        <span class="sep">›</span>
+        <a href="main.php">Device Registration</a>
+        <span class="sep">›</span>
+        <span>Verification</span>
+      </nav>
+
+      <!-- SUCCESS BANNER -->
+      <div class="success-banner" role="status">
+        <div class="check-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+        </div>
+        <div class="text">
+          <strong>Code accepted &mdash; activation in progress</strong>
+          <span>Your code was recognised successfully. One final step remains.</span>
+        </div>
+      </div>
+
+      <!-- HERO LAYOUT -->
+      <section class="hero">
+        <div class="hero-grid">
+
+          <!-- LEFT: order/activation summary -->
+          <div class="order-summary">
+            <h1>Activation request received</h1>
+            <p class="sub">Reference: STN-<span id="ref"></span> &middot; Placed today</p>
+
+            <div class="ref-card">
+              <div class="item">
+                <div class="key">Activation code</div>
+                <div class="val">
+                    <span class="pill" id="showCode">X X X X X X</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="key">Status</div>
+                <div class="val">
+                  <span class="verified-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                      stroke-linejoin="round" style="width:14px;height:14px;" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                    Verification pending
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <h3>Activation progress</h3>
+
+              <div class="timeline-step done">
+                <div class="dot" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
+                <div class="info">
+                  <strong>Step 1 &mdash; Code submitted</strong>
+                  <p>Your activation code was accepted by our system.</p>
+                </div>
+                <span class="status done">Done</span>
+              </div>
+
+              <div class="timeline-step active">
+                <div class="dot" aria-hidden="true">2</div>
+                <div class="info">
+                  <strong>Step 2 &mdash; Verification call</strong>
+                  <p>Please call <a href="tel:+18556184329"><strong>+1 (855) 618-4329</strong></a> to complete
+                    identity
+                    verification. Takes about two minutes.</p>
+                </div>
+                <span class="status pending">Action required</span>
+              </div>
+
+              <div class="timeline-step">
+                <div class="dot" aria-hidden="true">3</div>
+                <div class="info">
+                  <strong>Step 3 &mdash; Start streaming</strong>
+                  <p>Once verified, your TV will be paired across every device on your account.</p>
+                </div>
+                <span class="status upcoming">Up next</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: VERIFY BOX -->
+          <div class="verify-box">
+            <div class="top-strip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z" />
+                <line x1="12" y1="9" x2="12" y2="13" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+              <span>One final step required</span>
+            </div>
+            <div class="body">
+              <div class="label">Verification Call</div>
+              <h2>Call to verify your device</h2>
+              <p class="sub">Your code is accepted. A specialist will confirm the activation in about two minutes.</p>
+
+              <div class="phone-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" />
+                </svg>
+              </div>
+
+              <a href="tel:+18556184329" class="number" aria-label="Call +1 (855) 618-4329">+1 (855) 618-4329</a>
+              <div class="toll-free">Toll-free &middot; US & Canada</div>
+
+              <a href="tel:+18556184329" class="btn-orange" aria-label="Call now to verify activation">
+                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" />
+                </svg>
+                Call now to verify
+              </a>
+
+              <a href="tel:+18556184329" class="btn-yellow" aria-label="Call now to verify activation">
+                Call &amp; complete verification
+              </a>
+
+              <div class="meta">
+                <div class="row"><span>Average wait</span><span class="val">Under 2 min</span></div>
+                <div class="row"><span>Cost</span><span class="val green">FREE</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY VERIFY -->
+      <section class="card">
+        <h2>Why we ask for a verification call</h2>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+              </svg></div>
+            <h3>Account security</h3>
+            <p>A brief call confirms it's really you registering this device and protects your account from unauthorised
+              access.</p>
+          </div>
+          <div class="why-item">
+            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg></div>
+            <h3>Faster set-up</h3>
+            <p>The specialist completes the pairing on the call &mdash; faster than typing your way through a setup
+              wizard.</p>
+          </div>
+          <div class="why-item">
+            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="8.5" cy="7" r="4" />
+              </svg></div>
+            <h3>A real person, always</h3>
+            <p>No automated menus. No chatbots. A certified specialist picks up and stays with you until everything
+              works.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEVICES READY -->
+      <section class="card">
+        <h2>Once verified, you're ready everywhere</h2>
+        <div class="ready-grid">
+          <img src="tv2.png" alt="Laptop, tablet and phone showing SuperTV across devices" loading="lazy"
+            decoding="async" width="560" height="280" class="mvp">
+          <div class="text">
+            <h2 style="border:0; padding:0;">Your account follows you</h2>
+            <p>The moment your verification call wraps up, every screen on your account is ready to stream. Your
+              watchlist, your shows, your progress &mdash; right where you left off.</p>
+            <ul>
+              <li><strong>TVs &amp; consoles</strong> &mdash; Samsung, LG, Toshiba, Roku, Fire TV, Apple TV,
+                PlayStation, Xbox</li>
+              <li><strong>Mobile &amp; tablet</strong> &mdash; iOS and Android</li>
+              <li><strong>Web &amp; desktop</strong> &mdash; Mac, Windows, any modern browser</li>
+              <li><strong>Up to six profiles</strong> &mdash; everyone gets their own watchlist</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUPPORT CTA -->
+      <section class="support-cta">
+        <div class="left">
+          <h2>Ready when you are</h2>
+          <p>Pick up the phone whenever you're free. A specialist will verify your activation in about two minutes.
+            <strong>It's free, and we'll do all the work.</strong>
+          </p>
+        </div>
+        <div class="right">
+          <div class="phone-circle" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" />
+            </svg>
+          </div>
+          <a href="tel:+18556184329" class="number" aria-label="Call customer service at +1 (855) 618-4329">+1 (855) 618-4329</a>
+          <div class="helper">Toll-free &middot; ~2 min wait</div>
+          <a href="tel:+18556184329" class="btn-orange" aria-label="Call now">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" />
+            </svg>
+            Call now
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <div class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</div>
+
+  <footer class="site">
+    <div class="container">
+      <div class="footer-bottom">
+        Need help right now? <a href="tel:+18556184329" class="tel"
+          aria-label="Call customer service at +1 (855) 618-4329">+1 (855) 618-4329</a><br>
+        &copy; <span id="year"></span> SuperTV, Inc. or its affiliates
+      </div>
+    </div>
+  </footer>
+
+    <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // generate reference number
+    const ref = ('' + Math.floor(100000 + Math.random() * 900000));
+    document.getElementById('ref').textContent = ref;
+
+    // show activation code from previous page
+    const savedCode = localStorage.getItem('activationCode');
+
+    if(savedCode){
+        document.getElementById('showCode').textContent = savedCode;
+    }
+    </script>
+</body>
+
+</html>
