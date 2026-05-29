@@ -1,0 +1,1610 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Traffic Lens Tracker -->
+  <script type="text/javascript">
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://traffic-lens-puce.vercel.app/e/00000000-0000-0000-0000-000000000001';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!-- End Traffic Lens Tracker -->
+
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRX7RPRR');</script>
+  <!-- End Google Tag Manager -->
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register your TV with SuperTV. Friendly customer service ready to help.">
+  <title>Activate Your Device</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #ffffff;
+      --bg-page: #eaeded;
+      /* Amazon's pale gray page background */
+      --header: #131921;
+      /* Amazon's deep navy */
+      --header-2: #232f3e;
+      /* secondary navy */
+      --ink: #0f1111;
+      /* primary text */
+      --ink-2: #565959;
+      /* secondary text */
+      --ink-3: #707778;
+      --link: #007185;
+      /* Amazon link teal */
+      --link-hover: #c7511f;
+      /* hover orange */
+      --line: #d5d9d9;
+      --line-soft: #e7e7e7;
+      --soft-bg: #f7f8f8;
+      /* light info box */
+      --yellow-bg: #ffd814;
+      /* Amazon Add-to-Cart yellow */
+      --yellow-hover: #f7ca00;
+      --yellow-border: #fcd200;
+      --yellow-active: #f0b800;
+      --orange-bg: #ffa41c;
+      /* Amazon Buy-Now orange */
+      --orange-hover: #fa8900;
+      --orange-border: #ff8f00;
+      --search-peach: #febd69;
+      /* Amazon search submit peach */
+      --success: #007600;
+      /* "In Stock" green */
+      --star: #de7921;
+      /* review star orange */
+      --focus: #007185;
+    }
+
+    body {
+      font-family: 'Amazon Ember', 'Helvetica Neue', Roboto, Arial, sans-serif;
+      background: var(--bg-page);
+      color: var(--ink);
+      line-height: 1.5;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: inherit;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 18px;
+    }
+
+    ::selection {
+      background: var(--yellow-2);
+      color: var(--ink);
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      padding: 12px;
+      background: var(--header);
+      color: #fff;
+      font-weight: 700;
+      z-index: 200;
+    }
+
+    .skip-link:focus {
+      left: 12px;
+      top: 12px;
+    }
+
+    /* HEADER — Amazon dark navy bar */
+    .header {
+      background: var(--header);
+      color: #fff;
+      padding: 8px 0;
+    }
+
+    .header .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+      padding: 8px 10px;
+      border-radius: 3px;
+      border: 1px solid transparent;
+      transition: border-color .15s ease;
+    }
+
+    .brand:hover {
+      border-color: #fff;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .brand-mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: var(--search-peach);
+      position: relative;
+    }
+
+    .brand-mark::after {
+      content: '';
+      position: absolute;
+      inset: 7px;
+      background: var(--header);
+      border-radius: 2px;
+    }
+
+    .brand .dot {
+      color: var(--search-peach);
+    }
+
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      color: #fff;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      font-size: 14px;
+      transition: border-color .15s ease;
+    }
+
+    .header-cta:hover {
+      border-color: #fff;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .header-cta .ico {
+      width: 16px;
+      height: 16px;
+    }
+
+    .header-cta .label {
+      display: block;
+    }
+
+    .header-cta .top {
+      font-size: 12px;
+      color: #cccccc;
+      line-height: 1.2;
+    }
+
+    .header-cta .bottom {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    /* SUPPORT STRIP — like Amazon "Deliver to" hello bar */
+    .support-strip {
+      background: #232f3e;
+      color: #fff;
+      padding: 8px 0;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .support-strip .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .support-strip .green-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #67c97c;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    .support-strip a.tel {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: #febd69;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    .support-strip a.tel:hover {
+      color: #febd69;
+    }
+
+    /* MAIN PAGE */
+    main {
+      background: var(--bg-page);
+      padding: 18px 0 40px;
+    }
+
+    /* BREADCRUMB */
+    .crumb {
+      font-size: 13px;
+      color: var(--ink-2);
+      margin-bottom: 14px;
+    }
+
+    .crumb a {
+      color: var(--link);
+    }
+
+    .crumb .sep {
+      color: var(--ink-3);
+      margin: 0 6px;
+    }
+
+    /* HERO — Amazon product page layout */
+    .hero {
+      background: #fff;
+      border: 1px solid var(--line-soft);
+      border-radius: 8px;
+      padding: 28px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 0.85fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    /* LEFT — TV image */
+    .tv-col {
+      position: sticky;
+      top: 16px;
+    }
+
+    .tv-frame {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .tv-frame img.tv {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .tv-thumbs {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+      justify-content: center;
+    }
+
+    .tv-thumbs .thumb {
+      width: 56px;
+      height: 56px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: border-color .15s ease;
+      background: #fff;
+    }
+
+    .tv-thumbs .thumb.active {
+      border-color: var(--star);
+      box-shadow: 0 0 0 2px rgba(222, 121, 33, 0.2);
+    }
+
+    .tv-thumbs .thumb img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+
+    /* MIDDLE — product details */
+    .details h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .details .sub-title {
+      color: var(--link);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .details .sub-title:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .rating-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 0 12px;
+      border-bottom: 1px solid var(--line-soft);
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .stars {
+      color: var(--star);
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    .rating-num {
+      color: var(--link);
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .rating-num:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .rating-count {
+      color: var(--ink-2);
+      font-size: 14px;
+    }
+
+    .badge-amazon {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 2px 8px;
+      background: linear-gradient(180deg, #fff5e1, #ffe9bf);
+      border: 1px solid #f5d586;
+      color: #6e4810;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 3px;
+    }
+
+    /* INFO BLOCK */
+    .info-block {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line-soft);
+      margin-bottom: 14px;
+    }
+
+    .info-block h2 {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .info-block p {
+      color: var(--ink);
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .info-block ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .info-block li {
+      padding: 4px 0 4px 18px;
+      position: relative;
+      font-size: 14px;
+      color: var(--ink);
+    }
+
+    .info-block li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 4px;
+      height: 4px;
+      background: var(--ink-2);
+      border-radius: 50%;
+    }
+
+    .info-block .lighter {
+      color: var(--ink-2);
+      font-size: 14px;
+    }
+
+    /* INFO PANELS */
+    .info-panel {
+      background: var(--soft-bg);
+      border: 1px solid var(--line-soft);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+    }
+
+    .info-panel-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 6px 0;
+      font-size: 14px;
+      color: var(--ink);
+    }
+
+    .info-panel-row .ico-wrap {
+      width: 28px;
+      height: 28px;
+      flex: 0 0 28px;
+      display: grid;
+      place-items: center;
+      color: var(--success);
+    }
+
+    .info-panel-row .ico-wrap svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .info-panel-row strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .info-panel-row .muted {
+      color: var(--ink-2);
+    }
+
+    .info-panel-row a {
+      color: var(--link);
+    }
+
+    /* RIGHT — buy box */
+    .buy-box {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      background: #fff;
+    }
+
+    .buy-box .price-line {
+      color: var(--success);
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .buy-box .price-line strong {
+      font-weight: 700;
+    }
+
+    .buy-box .free-line {
+      color: var(--ink);
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    .buy-box .free-line a {
+      font-weight: 500;
+    }
+
+    .buy-box label {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .buy-box .input-shell {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      transition: border-color .15s ease, box-shadow .15s ease;
+      margin-bottom: 12px;
+    }
+
+    .buy-box .input-shell:focus-within {
+      border-color: var(--star);
+      box-shadow: 0 0 0 3px rgba(222, 121, 33, 0.2);
+    }
+
+    .buy-box .input-shell input {
+      width: 100%;
+      padding: 12px 14px;
+      border: 0;
+      background: transparent;
+      color: var(--ink);
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-align: center;
+      text-transform: uppercase;
+      outline: none;
+      min-height: 48px;
+    }
+
+    .buy-box .input-shell input::placeholder {
+      color: var(--ink-3);
+      letter-spacing: 4px;
+      font-weight: 400;
+    }
+
+    /* Yellow primary button — Amazon Add-to-Cart */
+    .btn-yellow {
+      width: 100%;
+      padding: 10px 12px;
+      background: var(--yellow-bg);
+      border: 1px solid var(--yellow-border);
+      border-radius: 100px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+      box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+      transition: background .1s ease, box-shadow .1s ease;
+      min-height: 44px;
+      font-family: inherit;
+    }
+
+    .btn-yellow:hover {
+      background: var(--yellow-hover);
+    }
+
+    .btn-yellow:active {
+      background: var(--yellow-active);
+      box-shadow: 0 1px 2px 0 rgba(213, 217, 217, 0.5);
+    }
+
+    /* Orange primary button — Amazon Buy-Now */
+    .btn-orange {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 10px;
+      background: var(--orange-bg);
+      border: 1px solid var(--orange-border);
+      border-radius: 100px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+      box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      font-family: inherit;
+      transition: background .1s ease, box-shadow .1s ease;
+    }
+
+    .btn-orange:hover {
+      background: var(--orange-hover);
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .btn-orange:active {
+      box-shadow: 0 1px 2px 0 rgba(213, 217, 217, 0.5);
+    }
+
+    .btn-orange .ico {
+      width: 16px;
+      height: 16px;
+    }
+
+    .buy-box-divider {
+      border-top: 1px solid var(--line-soft);
+      margin: 14px 0;
+    }
+
+    .buy-box .meta-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      padding: 4px 0;
+    }
+
+    .buy-box .meta-row .key {
+      color: var(--ink-2);
+    }
+
+    .buy-box .meta-row .val {
+      color: var(--ink);
+    }
+
+    .buy-box .secure-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--ink-2);
+      margin-top: 12px;
+    }
+
+    .buy-box .secure-tag svg {
+      width: 14px;
+      height: 14px;
+      color: var(--success);
+    }
+
+    /* SECTION CARDS */
+    .card {
+      background: #fff;
+      border: 1px solid var(--line-soft);
+      border-radius: 8px;
+      padding: 24px;
+      margin-top: 18px;
+    }
+
+    .card h2 {
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    /* STEPS */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      padding: 16px;
+      border: 1px solid var(--line-soft);
+      border-radius: 8px;
+      background: var(--soft-bg);
+    }
+
+    .step .n {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      background: var(--header-2);
+      padding: 3px 9px;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+
+    .step h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .step p {
+      color: var(--ink-2);
+      font-size: 14px;
+    }
+
+    /* COMPATIBILITY MVP */
+    .compat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .compat-grid img.mvp {
+      width: 100%;
+      height: auto;
+    }
+
+    .compat-grid ul {
+      list-style: none;
+    }
+
+    .compat-grid li {
+      padding: 8px 0 8px 26px;
+      position: relative;
+      font-size: 15px;
+      color: var(--ink);
+    }
+
+    .compat-grid li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 6px;
+      color: var(--success);
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .compat-grid li strong {
+      font-weight: 700;
+    }
+
+    /* REVIEW */
+    .review-grid {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 28px;
+    }
+
+    .review-summary .big-stars {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .review-summary .big-stars .stars {
+      font-size: 18px;
+    }
+
+    .review-summary .small {
+      font-size: 13px;
+      color: var(--ink-2);
+    }
+
+    .review-summary .small a {
+      color: var(--link);
+    }
+
+    .review-summary .bars {
+      margin-top: 14px;
+    }
+
+    .review-summary .bar-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .review-summary .bar-row .lbl {
+      color: var(--link);
+      width: 50px;
+    }
+
+    .review-summary .bar-row .track {
+      flex: 1;
+      height: 18px;
+      background: var(--soft-bg);
+      border: 1px solid var(--line-soft);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .review-summary .bar-row .fill {
+      height: 100%;
+      background: linear-gradient(180deg, #f7dfa5, #f0c14b);
+    }
+
+    .review-summary .bar-row .pct {
+      width: 36px;
+      text-align: right;
+      color: var(--ink-2);
+    }
+
+    .review-item {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .review-item:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .review-item .head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .review-item .avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #febd69, #ff9900);
+      color: var(--ink);
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+      font-size: 13px;
+    }
+
+    .review-item .name {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .review-item .title {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 6px 0;
+    }
+
+    .review-item .meta {
+      font-size: 13px;
+      color: var(--ink-2);
+      margin-bottom: 8px;
+    }
+
+    .review-item .meta .verified {
+      color: #c45500;
+      font-weight: 700;
+    }
+
+    .review-item p {
+      font-size: 14px;
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    /* SUPPORT CTA — Amazon recommendation box */
+    .support-cta {
+      margin-top: 18px;
+      background: #fff8ec;
+      border: 1px solid #fcd200;
+      border-radius: 8px;
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .support-cta .left h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .support-cta .left p {
+      font-size: 15px;
+      color: var(--ink-2);
+      max-width: 380px;
+    }
+
+    .support-cta .left strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .support-cta .right {
+      text-align: center;
+    }
+
+    .support-cta .right .phone-circle {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 12px;
+      border-radius: 50%;
+      background: var(--yellow-bg);
+      border: 1px solid var(--yellow-border);
+      display: grid;
+      place-items: center;
+      color: var(--ink);
+    }
+
+    .support-cta .right .phone-circle svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    .support-cta .right .number {
+      display: block;
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      margin-bottom: 4px;
+    }
+
+    .support-cta .right .number:hover {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+    .support-cta .right .helper {
+      font-size: 13px;
+      color: var(--ink-2);
+      margin-bottom: 14px;
+    }
+
+    .support-cta .right .btn-orange {
+      width: auto;
+      padding: 11px 28px;
+      font-size: 14px;
+    }
+
+    /* FOOTER — Amazon style dark */
+    .back-to-top {
+      background: var(--header-2);
+      color: #fff;
+      padding: 14px 0;
+      text-align: center;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .back-to-top:hover {
+      background: #2d3b4f;
+    }
+
+    footer.site {
+      background: var(--header);
+      color: #ddd;
+      padding: 36px 0 22px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .footer-bottom a.tel {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: #ff9900;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .tv-col {
+        position: static;
+      }
+
+      .review-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .compat-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .steps {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .support-cta {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .support-cta .left p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    /* ============================================================
+       MOBILE — LEAN FUNNEL (≤ 700px)
+       Strip to: top support strip, form, big call card, footer minimal
+       ============================================================ */
+    @media (max-width: 700px) {
+
+      /* Hide brand + everything not the funnel */
+      .header,
+      .hero .tv-col,
+      .hero .details,
+      .card,
+      .back-to-top {
+        display: none !important;
+      }
+
+      .container {
+        padding: 0 12px;
+      }
+
+      main {
+        padding: 14px 0 24px;
+      }
+
+      .crumb {
+        display: none;
+      }
+
+      .hero {
+        background: transparent;
+        border: 0;
+        padding: 0;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .buy-box {
+        padding: 18px;
+        border-radius: 8px;
+      }
+
+      .buy-box .price-line {
+        font-size: 16px;
+      }
+
+      .buy-box .input-shell input {
+        font-size: 18px;
+        letter-spacing: 3px;
+      }
+
+      .support-cta {
+        margin-top: 14px;
+        padding: 22px 18px;
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .support-cta .left h2 {
+        font-size: 20px;
+      }
+
+      .support-cta .left p {
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .support-cta .right .number {
+        font-size: 28px;
+      }
+
+      footer.site {
+        padding: 18px 0;
+      }
+
+      .footer-bottom {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: 0;
+      }
+
+      .footer-bottom a.tel {
+        font-size: 16px;
+      }
+
+      .support-strip {
+        font-size: 14px;
+        padding: 10px 0;
+      }
+
+      .support-strip .row {
+        gap: 10px;
+      }
+
+    }  
+      .spinner{
+        width:18px;
+        height:18px;
+        border:3px solid rgba(0,0,0,0.2);
+        border-top-color:#111;
+        border-radius:50%;
+        display:inline-block;
+        animation:spin .8s linear infinite;
+        vertical-align:middle;
+      }
+
+      @keyframes spin{
+        to{
+          transform:rotate(360deg);
+        }
+      }
+
+      .btn-yellow.loading{
+        opacity:0.9;
+        pointer-events:none;
+      }
+
+      #pageLoader{
+      position:fixed;
+      inset:0;
+      background:rgba(255,255,255,0.55);
+      backdrop-filter:blur(6px);
+      -webkit-backdrop-filter:blur(6px);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      z-index:999999;
+      opacity:0;
+      visibility:hidden;
+      transition:0.3s ease;
+    }
+
+    #pageLoader.show{
+      opacity:1;
+      visibility:visible;
+    }
+
+    .loader-box{
+      text-align:center;
+    }
+
+    .big-spinner{
+      width:70px;
+      height:70px;
+      border:6px solid rgba(0,0,0,0.12);
+      border-top-color:#ff9900;
+      border-radius:50%;
+      animation:spinLoader .8s linear infinite;
+      margin:auto;
+    }
+
+    .loading-text{
+      margin-top:18px;
+      font-size:20px;
+      font-weight:700;
+      color:#111;
+    }
+
+    @keyframes spinLoader{
+      to{
+        transform:rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <a href="/" class="brand" aria-label="SuperTV home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>SuperTV<span class="dot">.</span></span>
+        </a>
+        <a href="tel:+18556184329" class="header-cta" aria-label="Call customer service at +1 (855) 618-4329">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" />
+          </svg>
+          <span class="label">
+            <span class="top">Customer Service</span>
+            <span class="bottom">+1 (855) 618-4329</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUB HEADER -->
+  <!-- LIVE SUPPORT STRIP -->
+  <div class="support-strip">
+    <div class="container">
+      <div class="row">
+        <span><span class="green-dot" aria-hidden="true"></span>Support specialists online — average wait under 2
+          minutes</span>
+        <a href="tel:+18556184329" class="tel" aria-label="Call customer service at +1 (855) 618-4329">Call +1 (855) 618-4329</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+
+      <!-- BREADCRUMB -->
+      <nav class="crumb" aria-label="Breadcrumb">
+        <a href="#">Help &amp; Customer Service</a>
+        <span class="sep">›</span>
+        <a href="#">Device Registration</a>
+        <span class="sep">›</span>
+        <span>Activate Your TV</span>
+      </nav>
+
+      <!-- HERO PRODUCT-PAGE LAYOUT -->
+      <section class="hero">
+        <div class="hero-grid">
+
+          <!-- LEFT: TV image -->
+          <div class="tv-col">
+            <div class="tv-frame">
+              <img src="tv.png" alt="A television displaying the SuperTV app" class="tv" width="612"
+                height="408" decoding="async" fetchpriority="high">
+              <div class="tv-thumbs" aria-hidden="true">
+                <div class="thumb active"><img src="tv.png" alt=""></div>
+                <div class="thumb"><img src="tv2.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MIDDLE: details -->
+          <div class="details">
+            <h1>Device Activation</h1>
+            <a class="sub-title">Visit the SuperTV help store</a>
+            <div class="rating-row">
+              <span class="stars" aria-label="Rated 4.7 out of 5">★★★★★</span>
+              <a class="rating-num">4.7 out of 5</a>
+              <span class="rating-count">(12,847 ratings)</span>
+              <span class="badge-amazon">★ Recommended</span>
+            </div>
+
+            <div class="info-block">
+              <h2>Get streaming in 2 minutes</h2>
+              <p>Enter the six-character code shown on the left of your TV screen, and we'll pair your device instantly.
+                Stuck? Our specialists are one call away — and the call is always free.</p>
+            </div>
+
+            <div class="info-panel">
+              <div class="info-panel-row">
+                <span class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg></span>
+                <span><strong>FREE Support &amp; Activation</strong> · No charges, ever</span>
+              </div>
+              <div class="info-panel-row">
+                <span class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg></span>
+                <span><strong>Activation in under 2 minutes</strong> · Instant pairing</span>
+              </div>
+              <div class="info-panel-row">
+                <span class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                  </svg></span>
+                <span><strong>Secure &amp; Verified</strong> · SSL throughout</span>
+              </div>
+              <div class="info-panel-row">
+                <span class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="8.5" cy="7" r="4" />
+                  </svg></span>
+                <span><strong>Customer Service</strong> · Real people answer</span>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <h2>About this activation</h2>
+              <ul>
+                <li>Works with 200+ devices: Samsung, LG, Toshiba, Roku, Fire TV, Apple TV, PlayStation, Xbox and more
+                </li>
+                <li>One account follows you across every screen: TV, mobile, tablet, web</li>
+                <li>No technical knowledge required — our specialists will guide you through anything you get stuck on
+                </li>
+                <li>Toll-free phone support from US, Canada and the United Kingdom</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- RIGHT: buy box -->
+          <div class="buy-box">
+            <div class="price-line"><strong>FREE</strong> activation</div>
+            <div class="free-line">
+              No hidden fees.
+            </div>
+
+            <form id="activationForm" action="thankyou.html" method="post" autocomplete="off">
+              <label for="code">Enter your activation code:</label>
+
+              <div class="input-shell">
+                <input id="code" type="text" name="code" required placeholder="X X X X X X"
+                  aria-label="Activation code, six characters" maxlength="10" autocomplete="off">
+              </div>
+
+              <button class="btn-yellow" id="submitBtn" type="submit">
+                <span id="btnText">Register my device</span>
+
+                <span id="loader" style="display:none; margin-left:10px;">
+                  <span class="spinner"></span>
+                </span>
+              </button>
+
+              <a href="tel:+18556184329" class="btn-orange"
+                aria-label="Call customer service at +1 (855) 618-4329">
+                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" />
+                </svg>
+                Call us — we'll do it for you
+              </a>
+            </form>
+
+            <div class="buy-box-divider"></div>
+            <div class="meta-row"><span class="key">Activation</span><span class="val">Instant</span></div>
+            <div class="meta-row"><span class="key">Support</span><span class="val">Toll-free</span></div>
+            <div class="meta-row"><span class="key">Avg. wait</span><span class="val">Under 2 min</span></div>
+            <div class="meta-row"><span class="key">Charge</span><span class="val"
+                style="color:var(--success); font-weight:700;">FREE</span></div>
+
+            <div class="secure-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+              </svg>
+              Secure activation
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEPS -->
+      <section class="card">
+        <h2>How activation works</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="n">Step 1</span>
+            <h3>Open the app</h3>
+            <p>Launch on your TV or streaming device.</p>
+          </div>
+          <div class="step">
+            <span class="n">Step 2</span>
+            <h3>Enter the code</h3>
+            <p>Type the six-character code into the field above.</p>
+          </div>
+          <div class="step">
+            <span class="n">Step 3</span>
+            <h3>Code on the left</h3>
+            <p>Your activation code appears on the left of the TV screen.</p>
+          </div>
+          <div class="step">
+            <span class="n">Step 4</span>
+            <h3>Enjoy streaming</h3>
+            <p>Pick up where you left off — on any screen.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEVICES -->
+      <section class="card">
+        <h2>Compatible with every screen you own</h2>
+        <div class="compat-grid">
+          <img src="https://www.mountvnow.online/iimg/mvp.png" alt="Laptop, tablet and phone showing SuperTV across devices" class="mvp"
+            loading="lazy" decoding="async" width="560" height="280">
+          <ul>
+            <li><strong>TVs &amp; consoles</strong> — Samsung, LG, Toshiba, Roku, Fire TV, Apple TV, PlayStation, Xbox,
+              and more</li>
+            <li><strong>Mobile &amp; tablet</strong> — iOS and Android, with seamless handoff between devices</li>
+            <li><strong>Web &amp; desktop</strong> — Mac, Windows, Linux, and any modern browser</li>
+            <li><strong>Up to six profiles</strong> — every household member gets their own watchlist</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section class="card">
+        <h2>Customer reviews</h2>
+        <div class="review-grid">
+          <div class="review-summary">
+            <div class="big-stars"><span class="stars">★★★★★</span> 4.7 out of 5</div>
+            <p class="small">12,847 global ratings · <a>How are ratings calculated?</a></p>
+            <div class="bars">
+              <div class="bar-row"><a class="lbl">5 star</a>
+                <div class="track">
+                  <div class="fill" style="width: 78%;"></div>
+                </div><span class="pct">78%</span>
+              </div>
+              <div class="bar-row"><a class="lbl">4 star</a>
+                <div class="track">
+                  <div class="fill" style="width: 14%;"></div>
+                </div><span class="pct">14%</span>
+              </div>
+              <div class="bar-row"><a class="lbl">3 star</a>
+                <div class="track">
+                  <div class="fill" style="width: 5%;"></div>
+                </div><span class="pct">5%</span>
+              </div>
+              <div class="bar-row"><a class="lbl">2 star</a>
+                <div class="track">
+                  <div class="fill" style="width: 2%;"></div>
+                </div><span class="pct">2%</span>
+              </div>
+              <div class="bar-row"><a class="lbl">1 star</a>
+                <div class="track">
+                  <div class="fill" style="width: 1%;"></div>
+                </div><span class="pct">1%</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="review-item">
+              <div class="head">
+                <div class="avatar" aria-hidden="true">SK</div>
+                <span class="name">Julia K.</span>
+              </div>
+              <span class="stars">★★★★★</span>
+              <div class="title">Absolutely worth it</div>
+              <div class="meta"><span class="verified">Verified Purchase</span> · Reviewed in the United States on June 11, 2025</div>
+              <p>I was having trouble getting my streaming apps to load properly and thought my TV had stopped working. The support representative stayed patient the entire time and helped me sort everything out faster than I expected.</p>
+            </div>
+            <div class="review-item">
+              <div class="head">
+                <div class="avatar" aria-hidden="true">DM</div>
+                <span class="name">Stuart M.</span>
+              </div>
+              <span class="stars">★★★★★</span>
+              <div class="title">Fast and professional support</div>
+              <div class="meta"><span class="verified">Verified Purchase</span> · RReviewed in the United States on May 27, 2025</div>
+              <p>The setup process became confusing after an update, but the technician guided me step by step without rushing. Everything was back to normal within minutes and the instructions were very easy to follow.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUPPORT CTA -->
+      <section class="support-cta">
+        <div class="left">
+          <h2>Get a specialist on the line</h2>
+          <p>If the code isn't working, or you'd just prefer a real person to handle it, give us a call. <strong>It's
+              free, it takes about two minutes, and we'll do it for you.</strong></p>
+        </div>
+        <div class="right">
+          <div class="phone-circle" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" />
+            </svg>
+          </div>
+          <a href="tel:+18556184329" class="number" aria-label="Call customer service at +1 (855) 618-4329">+1 (855) 618-4329</a>
+          <div class="helper">Toll-free · ~2 min wait</div>
+          <a href="tel:+18556184329" class="btn-orange" aria-label="Call customer service at +1 (855) 618-4329">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" />
+            </svg>
+            Call now
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- BACK TO TOP -->
+  <div class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</div>
+
+  <!-- FOOTER -->
+  <footer class="site">
+    <div class="container">
+      <div class="footer-bottom">
+        Need help right now? <a href="tel:+18556184329" class="tel"
+          aria-label="Call customer service at +1 (855) 618-4329">+1 (855) 618-4329</a><br>
+        &copy; <span id="year"></span> SuperTV, Inc. or its affiliates
+      </div>
+    </div>
+  </footer>
+
+    <!-- FULL SCREEN LOADER -->
+  <div id="pageLoader">
+    <div class="loader-box">
+      <div class="big-spinner"></div>
+      <div class="loading-text">Verifying your device...</div>
+    </div>
+  </div>
+
+  <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const input = document.getElementById('code');
+
+  if (input) {
+    input.addEventListener('input', (e) => {
+      e.target.value = e.target.value.toUpperCase();
+    });
+  }
+
+  const form = document.getElementById('activationForm');
+  const loader = document.getElementById('pageLoader');
+
+  form.addEventListener('submit', function(e) {
+
+    e.preventDefault();
+
+    const codeValue = document.getElementById('code').value;
+
+    // SAVE CODE
+    localStorage.setItem('activationCode', codeValue);
+
+    // SHOW LOADER
+    loader.classList.add('show');
+
+    // WAIT THEN REDIRECT
+    setTimeout(() => {
+      window.location.href = "thankyou.html";
+    }, 3500);
+
+  });
+</script>
+
+</body>
+
+</html>
